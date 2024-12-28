@@ -5,7 +5,7 @@ This repository contains two Python-based Snake games built using `pygame` and `
 **Snake Hiss - Speedy** (**`snakegame2.py`**): The Snake's speed increases each time it eats food.
 Both games feature intuitive controls, a clean UI, and the ability to restart or quit after losing.
 
-##Features
+## Features
  -**Snake Hiss - Classic:**
   . Classic gameplay with a fixed speed.
   . Track your score during gameplay.
