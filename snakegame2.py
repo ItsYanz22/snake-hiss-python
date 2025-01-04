@@ -37,8 +37,7 @@ def our_snake(snake_block, snake_list):
 
 def your_score(score):
     value = score_font.render("Score: " + str(score), True, black)
-    display.blit(value, [width - 150, 10])  # Positioning score on the right side
-
+    display.blit(value, [width - 100, 10])  # Positioning score on the right side
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
     display.blit(mesg, [width / 6, height / 3])
@@ -66,9 +65,9 @@ def gameLoop():  # Creating a function
 
     while not game_over:
 
-        while game_close == True:
+        while game_close :
             display.fill(green)
-            message("You Lost! Press C-Play Again or Q-Quit", red)
+            message("You Lost! Press C-Play Again or Q-Quit", blue)
             your_score(Length_of_snake - 1)
             high_score = max(high_score, Length_of_snake - 1)
             high_score_text = score_font.render("High Score: " + str(high_score), True, black)
